@@ -23,9 +23,15 @@
         const helloText = document.getElementById('hello-text');
         
         img.addEventListener('click', () => {
+            helloText.style.display = 'block';
             helloText.style.opacity = '1';
+            
             setTimeout(() => {
                 helloText.style.opacity = '0';
+                // Wait for fade out animation to complete before hiding
+                setTimeout(() => {
+                    helloText.style.display = 'none';
+                }, 300); // matches transition duration
             }, 5000);
         });
     </script>

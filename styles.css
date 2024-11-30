@@ -26,6 +26,7 @@ img {
 #hello-text {
     font-size: 2rem;
     opacity: 0;
+    display: none;
     transition: opacity 0.3s ease;
     color: black;
 } 
