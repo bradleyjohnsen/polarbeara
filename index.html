@@ -12,7 +12,22 @@
 </head>
 <body>
     <main>
-        <img src="polar.png" alt="A majestic polar bear on ice">
+        <div class="container">
+            <img src="polar.png" alt="A majestic polar bear on ice">
+            <span id="hello-text">Hello</span>
+        </div>
     </main>
+
+    <script>
+        const img = document.querySelector('img');
+        const helloText = document.getElementById('hello-text');
+        
+        img.addEventListener('click', () => {
+            helloText.style.opacity = '1';
+            setTimeout(() => {
+                helloText.style.opacity = '0';
+            }, 5000);
+        });
+    </script>
 </body>
 </html>

@@ -15,4 +15,17 @@ img {
     border: 5px solid black; /* Add black border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     border-radius: 10px; /* Rounded corners */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#hello-text {
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: black;
 } 
